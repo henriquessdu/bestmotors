@@ -1,0 +1,64 @@
+:root {
+  --cor-principal: #004fff;
+  --cor-secundaria: #ff007f;
+  --cor-destaque: #34e5ff;
+  --cor-preto: #201e1f;
+  --cor-background: #edf7f6;
+  --cor-borda: #dae0e7;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-preto);
+  background-color: var(--cor-background);
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid;
+    border-color: var(--cor-borda);
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    height: 32px;
+    
+}
+
+.logo svg {
+    fill: var(--cor-principal);
+    width: 30px;
+    margin-right: 7px;
+}
+
+.logo p {
+    font-weight: 800;
+    font-style: italic;
+    color: var(--cor-principal);
+    font-size: 1.7rem;
+}
+
+header a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header a:hover {
+    color: #004fff;
+    transition: all 0.2s;
+}
+
+.pesquisa h1 {
+    font-size: 2em;
+}
