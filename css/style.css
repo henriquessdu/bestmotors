@@ -9,22 +9,20 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  color: var(--cor-preto);
   background-color: var(--cor-background);
+  color: var(--cor-preto);
 }
 
 header {
+    position: fixed;
     padding: 16px;
     border-bottom: 1px solid;
     border-color: var(--cor-borda);
     background-color: #fff;
     width: 100%;
-    position: fixed;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.header-align {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,15 +48,27 @@ header {
 }
 
 header a {
-    text-decoration: none;
+    color: var(--cor-preto);
     margin-left: 20px;
 }
 
 header a:hover {
-    color: #004fff;
+    color: var(--cor-principal);
     transition: all 0.2s;
 }
 
+.pesquisa {
+    text-align: center;
+    padding-top: 125px;
+}
+
 .pesquisa h1 {
-    font-size: 2em;
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--cor-preto);
+    margin-bottom: 10px;
+}
+
+.pesquisa p {
+    font-size: 1.25em;
 }

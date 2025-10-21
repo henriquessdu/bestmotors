@@ -5,14 +5,13 @@
 }
 
 .container {
-	width: 960px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0px;
 	position: relative;
 }
 
 .container:after, .container:before {
-	content: " ";
 	display: table;
 }
 
@@ -72,7 +71,7 @@
 
 @media only screen and (max-width: 767px) {
 .container {
-	width: 300px;
+	width: 320px;
 }
 
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
