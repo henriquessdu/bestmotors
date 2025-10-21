@@ -1,0 +1,44 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #201e1f;
+}
+
+html {
+    background-color: #edf7f6;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px;
+    border-color: #dae0e7;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    height: 32px;
+    
+}
+
+.logo svg {
+    fill:#004fff;
+    width: 30px;
+    margin-right: 7px;
+}
+
+.logo p {
+    font-weight: 800;
+    font-style: italic;
+    color: #201e1f;
+    font-size: 1.7rem;
+}
+
