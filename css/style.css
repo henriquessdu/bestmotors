@@ -17,7 +17,7 @@ html {
 
 header {
     position: fixed;
-    padding: 16px;
+    padding: 20px;
     border-bottom: 1px solid;
     border-color: var(--cor-borda);
     background-color: #fff;
@@ -52,7 +52,7 @@ select {
     border-radius: 12px;
 }
 
-.box {
+.box, .cards-grid .card {
     padding: 16px;
     border-bottom: 1px solid;
     border-color: var(--cor-borda);
@@ -91,11 +91,11 @@ header a:hover {
 .pesquisa {
     text-align: center;
     padding: 175px 0;
-    background: linear-gradient(var(--cor-principal) -600%, var(--cor-background));
+    background: linear-gradient(var(--cor-principal) -750%, var(--cor-background));
 }
 
 .pesquisa h1 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 3em;
     color: var(--cor-preto);
     margin-bottom: 10px;
@@ -117,4 +117,29 @@ header a:hover {
 
 .pesquisa button {
     width: 210px;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cards h2 {
+    font-weight: 700;
+    color: var(--cor-preto);
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.cards p {
+    color: var(--cor-preto-sub);
+}
+
+.card {
+    flex: 1;
+}
+
+.card div {
+    
 }
