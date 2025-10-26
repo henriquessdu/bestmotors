@@ -20,6 +20,7 @@ header {
     border-color: var(--cor-borda);
     background-color: #fff;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .header-align {
@@ -36,15 +37,14 @@ header {
 
 .logo svg {
     fill: var(--cor-principal);
-    width: 30px;
-    margin-right: 7px;
+    height: 30px;
 }
 
 .logo p {
     font-weight: 800;
     font-style: italic;
     color: var(--cor-principal);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 header a {
@@ -59,7 +59,8 @@ header a:hover {
 
 .pesquisa {
     text-align: center;
-    padding-top: 125px;
+    padding: 150px 0;
+    background: linear-gradient(var(--cor-principal) -600%, var(--cor-background));
 }
 
 .pesquisa h1 {
