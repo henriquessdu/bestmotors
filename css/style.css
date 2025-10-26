@@ -53,9 +53,9 @@ select {
     border-radius: 12px;
 }
 
-.box, .cards-grid .card {
+.box, .cards-grid .card, .filtros div {
     padding: 16px;
-    border-bottom: 1px solid;
+    border: 1px solid;
     border-color: var(--cor-borda);
     border-radius: 12px;
     background-color: #fff;
@@ -120,10 +120,34 @@ header a:hover {
     width: 210px;
 }
 
-.cards-grid {
+.carros {
+    margin-bottom: 200px;
+}
+
+.carros, .cards-grid {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
+}
+
+.filtros {
+    width: 500px;
+}
+
+.foto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.foto img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.foto img:hover {
+    transform: scale(1.1);
 }
 
 .cards h2 {
@@ -139,14 +163,18 @@ header a:hover {
 }
 
 .card {
-    flex: 1;
+    padding: 0 !important;
 }
 
-.card div span{
-    font-weight: 500;
+.tag {
     background-color: var(--cor-principal);
     color: #fff;
-    border-radius: 12px;
-    padding: 6px 12px;
+    font-weight: 500;
     font-size: 0.8rem;
+    border-radius: 6px;
+    padding: 6px 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
 }
