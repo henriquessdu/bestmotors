@@ -23,6 +23,7 @@ header {
     background-color: #fff;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    z-index: 1;
 }
 
 button {
@@ -90,7 +91,7 @@ header a:hover {
 
 .pesquisa {
     text-align: center;
-    padding: 175px 0;
+    padding: 175px  0 100px 0;
     background: linear-gradient(var(--cor-principal) -750%, var(--cor-background));
 }
 
@@ -130,6 +131,7 @@ header a:hover {
     color: var(--cor-preto);
     font-size: 1.5em;
     margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .cards p {
@@ -140,6 +142,11 @@ header a:hover {
     flex: 1;
 }
 
-.card div {
-    
+.card div span{
+    font-weight: 500;
+    background-color: var(--cor-principal);
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
 }
