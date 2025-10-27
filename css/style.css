@@ -77,6 +77,11 @@ select {
 .logo svg {
     fill: var(--cor-principal);
     height: 30px;
+    transition: transform 0.4s ease;
+}
+
+.logo svg:hover {
+    transform: scale(0.95);
 }
 
 header a {
@@ -124,7 +129,7 @@ header a:hover {
     margin-bottom: 100px;
 }
 
-.carros, .cards-grid {
+.carros{
     display: flex;
     gap: 20px;
 }
@@ -135,7 +140,9 @@ header a:hover {
 }
 
 .cards-grid {
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .foto {
