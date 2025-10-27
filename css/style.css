@@ -54,7 +54,7 @@ select {
 }
 
 .box, .cards-grid .card, .filtros div {
-    padding: 16px;
+    padding: 20px;
     border: 1px solid;
     border-color: var(--cor-borda);
     border-radius: 12px;
@@ -129,8 +129,13 @@ header a:hover {
     gap: 20px;
 }
 
-.filtros {
-    width: 500px;
+.filtros div {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.cards-grid {
+    margin-bottom: 20px;
 }
 
 .foto {
@@ -164,6 +169,50 @@ header a:hover {
 
 .card {
     padding: 0 !important;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card div:not(.foto) {
+    margin-left: 20px;
+}
+
+.card div:not(.foto) img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.card span {
+    color: var(--cor-preto-sub);
+    font-size: 0.9rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card h3 {
+    color: var(--cor-preto);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-weight: 700;
+    color: var(--cor-principal);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-final {
+    margin-bottom: 20px;
 }
 
 .tag {
