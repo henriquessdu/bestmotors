@@ -65,27 +65,30 @@
             <p>Os melhores veículos novos e seminovos com as melhores ofertas</p>
             <div class="pesquisa-input box">
                 <select name="tipo" id="tipo">
-                    <option value="volvo">Todos os tipos</option>
-                    <option value="carros">Carros</option>
-                    <option value="motos">Motos</option>
+                    <option value="todos">Todos os tipos</option>
+                    <option value="carro">Carros</option>
+                    <option value="moto">Motos</option>
                 </select>
-                <select name="marca" id="marca">
-                    <option value="volvo">Todas as categorias</option>
-                    <option value="saab">Hatch</option>
-                    <option value="mercedes">Sedan</option>
-                    <option value="audi">SUV</option>
-                    <option value="audi">Picape</option>
-                    <option value="audi">Esportivo</option>
+
+                <select name="categoria" id="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="hatch">Hatch</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="picape">Picape</option>
+                    <option value="esportivo">Esportivo</option>
                 </select>
+
                 <select name="preco" id="preco">
-                    <option value="volvo">Todos os preços</option>
-                    <option value="saab">Até R$ 50.000</option>
-                    <option value="mercedes">R$ 50.000 - R$ 100.000</option>
-                    <option value="audi">R$ 100.000 - R$ 150.000</option>
-                    <option value="audi">R$ 150.000 - R$ 200.000</option>
-                    <option value="audi">Acima de R$ 200.000</option>
+                    <option value="todas">Todos os preços</option>
+                    <option value="faixa1">Até R$ 50.000</option>
+                    <option value="faixa2">R$ 50.000 - R$ 100.000</option>
+                    <option value="faixa3">R$ 100.000 - R$ 150.000</option>
+                    <option value="faixa4">R$ 150.000 - R$ 200.000</option>
+                    <option value="faixa5">Acima de R$ 200.000</option>
                 </select>
-                <button>
+
+                <button id="btn-buscar">
                     <span>Buscar</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                 </button>
@@ -97,22 +100,28 @@
         <div class="filtros">
             <div class="faixa">
                 <span>Quilometragem</span><br>
-                <input placeholder="Km mínimo">
-                <input placeholder="Km máximo">
+                <input id="km-min" placeholder="Km mínimo">
+                <input id="km-max" placeholder="Km máximo">
             </div> 
             <div class="ano">
                 <span>Ano</span><br>
-                <input placeholder="Ano mínimo">
-                <input placeholder="Ano máximo">
+                <input id="ano-min" placeholder="Ano mínimo">
+                <input id="ano-max" placeholder="Ano máximo">
             </div> 
             <div class="marca">
                 <span>Marca</span><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> Volkswagen</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Ford</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> Renault</label><br>
+                <label>
+                    <input type="checkbox" class="filtro-marca" value="Volkswagen">
+                    Volkswagen
+                </label><br>
+                <label>
+                    <input type="checkbox" class="filtro-marca" value="Ford">
+                    Ford
+                </label><br>
+                <label>
+                    <input type="checkbox" class="filtro-marca" value="Renault">
+                    Renault
+                </label><br>
             </div> 
         </div>
         <div class="cards">
@@ -124,7 +133,7 @@
                             <img src="img/mustangmilgrau.jpg" alt="Foto Volkswagen Jetta 2.0 TSI Highline">
                         </div>
                         <div>
-                            <h3>Volkswagen Jetta 2.0 TSI Highline</h3>
+                            <h3>Volkswagen Jetta 2.0 TSI Highline</h3><h3></h3>
                             <p>R$ 89.900</p>
                         </div>
                         <div class="info">
