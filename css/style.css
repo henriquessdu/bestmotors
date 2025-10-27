@@ -100,6 +100,15 @@ header a:hover {
     transition: all 0.2s;
 }
 
+.mobile {
+    display: none;
+}
+
+.mobile svg{
+    height: 32px;
+    fill: var(--cor-preto);
+}
+
 .pesquisa {
     text-align: center;
     padding: 175px  0 100px 0;
