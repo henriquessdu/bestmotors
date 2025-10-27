@@ -138,9 +138,13 @@ header a:hover {
     margin-bottom: 20px;
 }
 
+.filtros span {
+    font-weight: 600;
+}
+
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
