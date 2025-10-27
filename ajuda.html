@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Suporte - Bestmotors</title>
+
+  <!-- SDK do EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Seu script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>Fale com o Suporte</h2>
+
+  <form id="form-suporte">
+    <label>
+      Nome
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      E-mail
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Assunto
+      <input type="text" name="title" required>
+    </label>
+
+    <label>
+      Mensagem
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
