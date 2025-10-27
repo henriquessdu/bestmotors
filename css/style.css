@@ -130,7 +130,7 @@ header a:hover {
 }
 
 .filtros div {
-    width: 300px;
+    width: 250px;
     margin-bottom: 20px;
 }
 
@@ -153,14 +153,6 @@ header a:hover {
 
 .foto img:hover {
     transform: scale(1.1);
-}
-
-.cards h2 {
-    font-weight: 700;
-    color: var(--cor-preto);
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    margin-bottom: 25px;
 }
 
 .cards p {
