@@ -1,9 +1,8 @@
 :root {
   --cor-principal: #004fff;
-  --cor-secundaria: #ff007f;
-  --cor-destaque: #34e5ff;
   --cor-preto: #201e1f;
   --cor-preto-sub: #6e6e6e;
+  --cor-branco: #fff;
   --cor-background: #edf7f6;
   --cor-borda: #dae0e7;
 }
@@ -19,7 +18,7 @@ header {
     padding: 20px;
     border-bottom: 1px solid;
     border-color: var(--cor-borda);
-    background-color: #fff;
+    background-color: var(--cor-branco);
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     z-index: 2;
@@ -27,7 +26,7 @@ header {
 
 button {
     background-color: var(--cor-principal);
-    color: #fff;
+    color: var(--cor-branco);
     border: none;
     padding: 12px;
     border-radius: 12px;
@@ -58,7 +57,7 @@ select {
     border: 1px solid;
     border-color: var(--cor-borda);
     border-radius: 12px;
-    background-color: #fff;
+    background-color: var(--cor-branco);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
@@ -216,7 +215,7 @@ header a:hover {
 
 .tag {
     background-color: var(--cor-principal);
-    color: #fff;
+    color: var(--cor-branco);
     font-weight: 500;
     font-size: 0.8rem;
     border-radius: 6px;
@@ -237,7 +236,7 @@ header a:hover {
 }
 
 footer {
-    background-color: #fff;
+    background-color: var(--cor-branco);
     color: var(--cor-preto-sub);
     font-size: 0.9rem;
     border-top: 1px solid;
