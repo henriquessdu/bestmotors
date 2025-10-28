@@ -100,13 +100,36 @@ header a:hover {
     transition: all 0.2s;
 }
 
-.mobile {
+.mobile, .hidden {
     display: none;
 }
 
 .mobile svg{
     height: 32px;
     fill: var(--cor-preto);
+}
+
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 60px; /* ajusta conforme o header */
+  right: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 12px;
+}
+
+#mobile-menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+/* quando ativo */
+#mobile-menu.show {
+  display: flex;
 }
 
 .pesquisa {
@@ -228,9 +251,8 @@ display: flex;
 .card h3 {
     color: var(--cor-preto);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 20px;
-    margin-bottom: 5px;
 }
 
 .card p {
