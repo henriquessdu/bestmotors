@@ -106,7 +106,12 @@ header a:hover {
 
 .mobile svg{
     height: 32px;
-    fill: var(--cor-preto);
+    width: 32px;
+    stroke: var(--cor-principal);
+    cursor: pointer;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round; 
 }
 
 #mobile-menu {
@@ -159,6 +164,21 @@ header a:hover {
     justify-content: space-between;
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    
+}
+
+select:focus, input:focus, textarea:focus {
+  outline-color: var(--cor-principal);
+}
+
 .pesquisa button {
     width: 210px;
 }
@@ -181,15 +201,14 @@ header a:hover {
     font-weight: 600;
 }
 
-.faixa div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.faixa input, .ano input {
+    width: 100%;
+    margin-top: 10px
 }
 
-.faixa div input{
-display: flex;
-  gap: 8px; /* espaço entre os dois inputs */
+.marca label {
+  display: block;
+  margin-top: 10px;
 }
 
 .cards-grid {
