@@ -52,7 +52,7 @@ select {
     border-radius: 12px;
 }
 
-input {
+input, textarea {
     border-radius: 12px;
     border: 1px solid;
     border-color: var(--cor-borda);
@@ -117,9 +117,9 @@ header a:hover {
 #mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--cor-branco);
   position: absolute;
-  top: 60px; /* ajusta conforme o header */
+  top: 60px;
   right: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -306,7 +306,7 @@ select:focus, input:focus, textarea:focus {
   margin-bottom: 75px;
 }
 
-#form-vender {
+.vender-container form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -332,9 +332,10 @@ select:focus, input:focus, textarea:focus {
   width: 100%;
 }
 
-#btn-enviar-venda {
+.vender-container button {
     width: 100%;
     margin-top: 15px;
+    justify-content: center;
 }
 
 .footer-container {
@@ -363,30 +364,29 @@ footer svg {
 
 .slideshow {
   position: relative;
-  max-width: 600px;      /* largura máxima do slideshow */
-  margin: 0 auto;        /* centraliza na página */
+  max-width: 600px;
+  margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  background: #000;
+  background: var(--cor-preto);
 }
 
 .slide {
-  display: none;         /* esconde todas por padrão */
+  display: none;
 }
 
 .slide.ativo {
-  display: block;        /* só a ativa aparece */
+  display: block;
 }
 
 .slide img {
   width: 100%;
-  height: 360px;         /* ajusta a altura que você quer */
-  object-fit: cover;     /* corta sem distorcer */
+  height: 360px;
+  object-fit: cover;
   display: block;
 }
 
-/* botões */
 .btn-prev,
 .btn-next {
   position: absolute;
@@ -394,7 +394,7 @@ footer svg {
   transform: translateY(-50%);
   background: rgba(0,0,0,0.5);
   border: none;
-  color: #fff;
+  color: var(--cor-branco);
   font-size: 28px;
   font-weight: bold;
   line-height: 1;

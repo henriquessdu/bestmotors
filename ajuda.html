@@ -62,31 +62,38 @@
             </nav>
         </div>
     </header>
-    <h2>Fale com o Suporte</h2>
+    
+    <div class="vender">
+      <div class="container">
+        <h1>Precisando de ajuda?</h1>
+        <p>Nos envie uma mensagem e entraremos em contato</p>
+        <section class="vender-container">
+          <form id="form-suporte">
+            <div class="campo">
+              <label>Seu Nome</label>
+              <input type="text" name="name" required>
+            </div>
 
-    <form id="form-suporte">
-      <label>
-        Nome
-        <input type="text" name="name" required>
-      </label>
+            <div class="campo">
+              <label>E-mail</label>
+              <input type="email" name="email" required>
+            </div>
+            
+            <div class="campo">
+              <label>Assunto</label>
+              <input type="text" name="title" required>
+            </div>
+            
+            <div class="campo">
+              <label>Mensagem</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
 
-      <label>
-        E-mail
-        <input type="email" name="email" required>
-      </label>
-
-      <label>
-        Assunto
-        <input type="text" name="title" required>
-      </label>
-
-      <label>
-        Mensagem
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-
-      <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </div>
     
     <footer>
         <div class="footer-container">
