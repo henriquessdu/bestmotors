@@ -10,7 +10,6 @@ document.getElementById('form-vender').addEventListener('submit', function (even
   const ano          = document.getElementById('ano').value.trim();
   const localizacao  = document.getElementById('localizacao').value.trim();
 
-  // monta mensagem de WhatsApp
   const mensagem = 
 `Olá! Eu sou ${nome} e quero vender um ${marca} ${modelo} (${categoria}).
 
@@ -22,12 +21,9 @@ Detalhes do veículo:
 
 Pode me retornar? Posso enviar fotos do veículo também.`;
 
-  // número da sua loja
-  const numeroLoja = "15991676893"; // <-- TROCAR PELO SEU NÚMERO (só dígitos, c/ DDD)
+  const numeroLoja = "5515991676893";
 
-  // monta URL com texto codificado
   const url = `https://wa.me/${numeroLoja}?text=${encodeURIComponent(mensagem)}`;
 
-  // abre o WhatsApp
   window.open(url, '_blank');
 });
