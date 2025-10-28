@@ -137,20 +137,20 @@ header a:hover {
   display: flex;
 }
 
-.pesquisa {
+.pesquisa, .vender {
     text-align: center;
-    padding: 175px  0 100px 0;
+    padding: 175px  0 75px 0;
     background: linear-gradient(var(--cor-principal) -750%, var(--cor-background));
 }
 
-.pesquisa h1 {
+.pesquisa h1, .vender h1 {
     font-weight: 700;
     font-size: 3em;
     color: var(--cor-preto);
     margin-bottom: 10px;
 }
 
-.pesquisa p {
+.pesquisa p, .vender p{
     font-size: 1.25em;
     margin-bottom: 35px;
     color: var(--cor-preto-sub);
@@ -298,10 +298,49 @@ select:focus, input:focus, textarea:focus {
     z-index: 1;
 }
 
+.vender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+#form-vender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.campo label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+}
+
+#btn-enviar-venda {
+    width: 100%;
+    margin-top: 15px;
+}
+
 .footer-container {
     max-width: 1200px;
     display: flex;
-    justify-content: space-between; /* joga um pra cada lado */
+    justify-content: space-between;
     align-items: center; 
     margin: 0 auto;
     height: 75px;
