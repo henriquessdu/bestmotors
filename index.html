@@ -74,14 +74,12 @@
             <h1>Encontre o motor dos seus sonhos</h1>
             <h2>Os melhores veículos novos e seminovos com as melhores ofertas</h2>
             <div class="pesquisa-input box">
-                <label>Tipo de Veículo</label>
                 <select name="tipo" id="tipo">
                     <option value="todos">Todos os tipos</option>
                     <option value="carro">Carros</option>
                     <option value="moto">Motos</option>
                 </select>
 
-                <label>Categorias de Veículo</label>
                 <select name="categoria" id="categoria">
                     <option value="todas">Todas as categorias</option>
                     <option value="hatch">Hatch</option>
@@ -91,7 +89,6 @@
                     <option value="esportivo">Esportivo</option>
                 </select>
 
-                <label>Faixa de Preços</label>
                 <select name="preco" id="preco">
                     <option value="todas">Todos os preços</option>
                     <option value="faixa1">Até R$ 50.000</option>
@@ -102,7 +99,7 @@
                 </select>
 
                 <button id="btn-buscar">
-                    <span>Buscar</span>
+                    <span class="tablet">Buscar</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                 </button>
             </div>
@@ -111,19 +108,19 @@
 
     <div class="carros container">
         <div class="filtros">
-            <div class="faixa">
+            <div class="faixa desktop">
                 <span>Quilometragem</span>
                 <div>
                     <input id="km-min" placeholder="Km mínimo">
                     <input id="km-max" placeholder="Km máximo">
                 </div>
             </div> 
-            <div class="ano">
+            <div class="ano desktop">
                 <span>Ano</span>
                 <input id="ano-min" placeholder="Ano mínimo">
                 <input id="ano-max" placeholder="Ano máximo">
             </div> 
-            <div class="marca">
+            <div class="marca desktop">
                 <span>Marca</span>
                 <label>
                     <input type="checkbox" class="filtro-marca" value="Volkswagen">
@@ -141,6 +138,78 @@
         </div>
         <div class="cards">
             <div class="cards-grid">
+                <a href="href="#" class="whatsapp-link" data-whatsapp="15991676893">
+                    <div class="card">
+                        <div class="foto">
+                            <div class="tag">Sedan</div>
+                            <img src="img/mustangmilgrau.jpg" alt="Foto Volkswagen Jetta 2.0 TSI Highline" fetchpriority="high">
+                        </div>
+                        <div>
+                            <h3>Volkswagen Jetta 2.0 TSI Highline</h3><h3></h3>
+                            <p>R$ 89.900</p>
+                        </div>
+                        <div class="info">
+                            <img src="img/brand-speedtest.svg" alt="Símbolo Quilometragem">
+                            <span>45.000 km</span>
+                        </div>
+                        <div class="info">
+                            <img src="img/calendar-event.svg" alt="Símbolo Ano">
+                            <span>2020</span>
+                        </div>
+                        <div class="info card-final">
+                            <img src="img/map-pin.svg" alt="Símbolo Localização">
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="href="#" class="whatsapp-link" data-whatsapp="15991676893">
+                    <div class="card">
+                        <div class="foto">
+                            <div class="tag">Sedan</div>
+                            <img src="img/mustangmilgrau.jpg" alt="Foto Volkswagen Jetta 2.0 TSI Highline" fetchpriority="high">
+                        </div>
+                        <div>
+                            <h3>Volkswagen Jetta 2.0 TSI Highline</h3><h3></h3>
+                            <p>R$ 89.900</p>
+                        </div>
+                        <div class="info">
+                            <img src="img/brand-speedtest.svg" alt="Símbolo Quilometragem">
+                            <span>45.000 km</span>
+                        </div>
+                        <div class="info">
+                            <img src="img/calendar-event.svg" alt="Símbolo Ano">
+                            <span>2020</span>
+                        </div>
+                        <div class="info card-final">
+                            <img src="img/map-pin.svg" alt="Símbolo Localização">
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="href="#" class="whatsapp-link" data-whatsapp="15991676893">
+                    <div class="card">
+                        <div class="foto">
+                            <div class="tag">Sedan</div>
+                            <img src="img/mustangmilgrau.jpg" alt="Foto Volkswagen Jetta 2.0 TSI Highline" fetchpriority="high">
+                        </div>
+                        <div>
+                            <h3>Volkswagen Jetta 2.0 TSI Highline</h3><h3></h3>
+                            <p>R$ 89.900</p>
+                        </div>
+                        <div class="info">
+                            <img src="img/brand-speedtest.svg" alt="Símbolo Quilometragem">
+                            <span>45.000 km</span>
+                        </div>
+                        <div class="info">
+                            <img src="img/calendar-event.svg" alt="Símbolo Ano">
+                            <span>2020</span>
+                        </div>
+                        <div class="info card-final">
+                            <img src="img/map-pin.svg" alt="Símbolo Localização">
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </a>
                 <a href="href="#" class="whatsapp-link" data-whatsapp="15991676893">
                     <div class="card">
                         <div class="foto">
@@ -191,6 +260,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="js/comprar.js"></script>
     </body>
 </html>

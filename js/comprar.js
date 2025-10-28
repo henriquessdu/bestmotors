@@ -1,14 +1,3 @@
-const icon = document.getElementById('menu-icon');
-  const menu = document.getElementById('mobile-menu');
-
-  icon.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-
-// =========================
-// 1. Selecionar elementos de filtro
-// =========================
-
 const selectTipo = document.getElementById('tipo');           // "todos" | "carro" | "moto"
 const selectCategoria = document.getElementById('categoria'); // "todas" | "sedan" | ...
 const selectPreco = document.getElementById('preco');         // "todas" | "faixa1" | ...

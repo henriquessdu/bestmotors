@@ -29,7 +29,7 @@
   <body>
      <header>
         <div class="container header-align">
-            <a href="index.html">
+            <a href="index.html" aria-label="Página Inicial Bestmotors">
                 <div class="logo">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 722.6 110.7">
@@ -58,8 +58,15 @@
                 <a href="ajuda.html" title="Ajuda Bestmotors">Ajuda</a>
             </nav>
             <nav class="mobile">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
             </nav>
+            <div id="mobile-menu" class="hidden">
+                <a href="index.html">Comprar</a>
+                <a href="vender.html">Vender</a>
+                <a href="financiamento.html">Financiamento</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="ajuda.html">Ajuda</a>
+            </div>
         </div>
     </header>
     
@@ -70,7 +77,7 @@
         <section class="vender-container">
           <form id="form-suporte">
             <div class="campo">
-              <label>Seu Nome</label>
+              <label>Seu nome</label>
               <input type="text" name="name" required>
             </div>
 
@@ -117,6 +124,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="js/ajuda.js"></script>
   </body>
 </html>

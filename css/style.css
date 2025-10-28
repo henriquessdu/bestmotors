@@ -179,7 +179,7 @@ header a:hover {
 
 .pesquisa h1, .vender h1, .texto h1 {
     font-weight: 700;
-    font-size: 3em !important;
+    font-size: 3em;
     color: var(--cor-preto);
     margin-bottom: 10px;
     text-align: center;
@@ -198,10 +198,6 @@ header a:hover {
     max-width: 960px;
     display: flex;
     justify-content: space-between;
-}
-
-.pesquisa-input label {
-    display: none;
 }
 
 select {
@@ -298,7 +294,7 @@ select:focus, input:focus, textarea:focus {
 
 .card span {
     color: var(--cor-preto-sub);
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .info {
@@ -310,14 +306,14 @@ select:focus, input:focus, textarea:focus {
 .card h3 {
     color: var(--cor-preto);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 20px;
 }
 
 .card p {
     font-weight: 700;
     color: var(--cor-principal);
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
@@ -329,7 +325,7 @@ select:focus, input:focus, textarea:focus {
     background-color: var(--cor-principal);
     color: var(--cor-branco);
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     border-radius: 6px;
     padding: 6px 12px;
     position: absolute;
@@ -390,7 +386,7 @@ select:focus, input:focus, textarea:focus {
 footer {
     background-color: var(--cor-branco);
     color: var(--cor-preto-sub);
-    font-size: 0.9rem;
+    font-size: 0.9em;
     border-top: 1px solid;
     border-color: var(--cor-borda);
 }
