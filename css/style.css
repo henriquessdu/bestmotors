@@ -152,6 +152,12 @@ header a:hover {
     max-width: 700px;
 }
 
+.texto img {
+    max-width: 700px;
+    margin-top: -10px;
+    margin-bottom: -40px;
+}
+
 .texto p, .texto ol, .texto ul{
     margin-bottom: 25px;
 }
