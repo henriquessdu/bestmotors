@@ -57,6 +57,7 @@ input, textarea {
     border: 1px solid;
     border-color: var(--cor-borda);
     padding: 12px;
+    resize: vertical;
 }
 
 .box, .cards-grid .card, .faixa, .ano, .marca {
@@ -122,7 +123,7 @@ header a:hover {
   top: 60px;
   right: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   padding: 12px;
 }
 
@@ -137,23 +138,52 @@ header a:hover {
   display: flex;
 }
 
-.pesquisa, .vender {
+.pesquisa, .vender, .texto {
     text-align: center;
     padding: 175px  0 75px 0;
     background: linear-gradient(var(--cor-principal) -750%, var(--cor-background));
 }
 
-.pesquisa h1, .vender h1 {
-    font-weight: 700;
-    font-size: 3em;
-    color: var(--cor-preto);
+.texto {
+    text-align: left;
+}
+
+.texto div {
+    max-width: 700px;
+}
+
+.texto p, .texto ol, .texto ul{
+    margin-bottom: 25px;
+}
+
+.texto p, .texto h3, .texto ol, .texto ul {
+    font-size: 1.15em;
+}
+
+.texto li {
     margin-bottom: 10px;
 }
 
-.pesquisa p, .vender p{
+.texto h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--cor-principal);
+}
+
+.pesquisa h1, .vender h1, .texto h1 {
+    font-weight: 700;
+    font-size: 3em !important;
+    color: var(--cor-preto);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pesquisa h2, .vender h2, .texto h2{
     font-size: 1.25em;
     margin-bottom: 35px;
     color: var(--cor-preto-sub);
+    text-align: center;
 }
 
 .pesquisa-input {
@@ -364,12 +394,13 @@ footer svg {
 
 .slideshow {
   position: relative;
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   background: var(--cor-preto);
+  margin-bottom: 25px;
 }
 
 .slide {
@@ -382,7 +413,7 @@ footer svg {
 
 .slide img {
   width: 100%;
-  height: 360px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
