@@ -59,7 +59,7 @@ input {
     padding: 12px;
 }
 
-.box, .cards-grid .card, .filtros div {
+.box, .cards-grid .card, .faixa, .ano, .marca {
     padding: 20px;
     border: 1px solid;
     border-color: var(--cor-borda);
@@ -149,13 +149,24 @@ header a:hover {
     gap: 20px;
 }
 
-.filtros div {
+.faixa, .ano, .marca {
     width: 250px;
     margin-bottom: 20px;
 }
 
 .filtros span {
     font-weight: 600;
+}
+
+.faixa div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faixa div input{
+display: flex;
+  gap: 8px; /* espaço entre os dois inputs */
 }
 
 .cards-grid {
