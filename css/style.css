@@ -200,6 +200,10 @@ header a:hover {
     justify-content: space-between;
 }
 
+.pesquisa-input label {
+    display: none;
+}
+
 select {
     appearance: none;
     -webkit-appearance: none;
